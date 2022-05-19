@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(241, 241, 241);
   display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 2rem;
+}
+
+.header-logo {
+  margin-right: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(87, 87, 87);
+}
+
+.header-text {
+  margin-right: 1.5rem;
+  font-weight: 500;
+  color: rgb(126, 126, 126);
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 2rem;
+  top: 5rem;
+  width: 75%;
   flex-direction: column;
+}
+
+.content-top {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.content-top h2 {
+  color: rgb(0, 0, 209);
+}
+
+.content-mid {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid 1.5px;
+  border-radius: .5rem;
+  border-color: rgb(211, 211, 211);
+  width: 100%;
+  height: 13rem;
 }
 
-.App-link {
-  color: #61dafb;
+.content-mid img {
+  height: 10rem;
+  border-radius: 50%;
+  border: solid 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-bottom {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-bottom h2 {
+  color: rgb(87, 87, 87);
+}
+
+.side-menu {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  width: 18rem;
+  height: 28rem;
+  left: .5rem;
+  top: 7rem;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.section:hover{
+  background-color: rgba(204, 227, 233, 0.658);
+}
+
+.section h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: .6rem;
+  color: rgb(126, 126, 126);
+}
+
+#home-item {
+  padding-left: 1.2rem;
+}
+#test-item {
+  padding-left: 1.2rem;
+}
+
+#history-item {
+  padding-left: 1.2rem;
+}
+
+.footer {
+  width: 100%;
+  height: 3.5rem;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 1px;
+  border-color: rgb(218, 218, 218);
+  background-color: rgb(233, 233, 233);
+  padding: 0rem 1.5rem;
+  flex-direction: row;
+  box-shadow: 1rem 1rem 1rem;
+}
+
+.footer h4 {
+  font-weight: 500;
+  line-height: 1.4rem;
+  font-size: .95rem;
 }
